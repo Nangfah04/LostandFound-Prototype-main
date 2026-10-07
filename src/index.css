@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+html, body {
+  font-family: 'Prompt', sans-serif;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f4f4f5;
+  color: #18181b;
+}
+
+:focus-visible { outline: 2px solid #4f46e5; outline-offset: 2px; }
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
